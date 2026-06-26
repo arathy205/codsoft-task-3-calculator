@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Calculator</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="calculator">
+
+            <!-- Heading -->
+            <div class="title">
+                <h2>Calculator</h2>
+                <p>CodSoft Level 1 - Task 3</p>
+            </div>
+
+            <!-- Display -->
+            <div class="display">
+
+                <div id="history" class="history"></div>
+
+                <input
+                    type="text"
+                    id="display"
+                    value=""
+                    placeholder="0"
+                    readonly
+                >
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <!-- Row 1 -->
+                <button class="btn clear" data-value="AC">
+                    AC
+                </button>
+
+                <button class="btn delete" data-value="DEL">
+                    ⌫
+                </button>
+
+                <button class="btn operator" data-value="%">
+                    %
+                </button>
+
+                <button class="btn operator" data-value="/">
+                    ÷
+                </button>
+
+                <!-- Row 2 -->
+
+                <button class="btn number" data-value="7">
+                    7
+                </button>
+
+                <button class="btn number" data-value="8">
+                    8
+                </button>
+
+                <button class="btn number" data-value="9">
+                    9
+                </button>
+
+                <button class="btn operator" data-value="*">
+                    ×
+                </button>
+
+                <!-- Row 3 -->
+
+                <button class="btn number" data-value="4">
+                    4
+                </button>
+
+                <button class="btn number" data-value="5">
+                    5
+                </button>
+
+                <button class="btn number" data-value="6">
+                    6
+                </button>
+
+                <button class="btn operator" data-value="-">
+                    −
+                </button>
+
+                <!-- Row 4 -->
+
+                <button class="btn number" data-value="1">
+                    1
+                </button>
+
+                <button class="btn number" data-value="2">
+                    2
+                </button>
+
+                <button class="btn number" data-value="3">
+                    3
+                </button>
+
+                <button class="btn operator" data-value="+">
+                    +
+                </button>
+
+                <!-- Row 5 -->
+
+                <button class="btn zero number" data-value="0">
+                    0
+                </button>
+
+                <button class="btn number" data-value=".">
+                    .
+                </button>
+
+                <button class="btn equal" data-value="=">
+                    =
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
